@@ -1,0 +1,250 @@
+
+
+:root {
+    --roxo-fundo: #1b003a;
+    --roxo-claro: #5a009c;
+    --roxo-neon: #ff00ff; /* Cor magenta/pink neon */
+    --roxo-escuro: #0f0023;
+    --branco: #ffffff;
+    --cinza-claro: #eeeeee;
+}
+
+/* ------------------ Estilos Globais ------------------ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, var(--roxo-fundo) 0%, var(--roxo-escuro) 100%);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Remove a sublinhado de todos os links por padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------------ SEÇÃO MINIGAMES ------------------ */
+main {
+    padding: 20px;
+}
+
+.titulo-secao {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--cinza-claro);
+}
+
+.minigames {
+    background-color: var(--roxo-escuro);
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Layout de Grade para os Jogos */
+.lista-jogos {
+    display: grid;
+    /* 1. Define o número de colunas (3 no seu modelo) e o tamanho mínimo */
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); 
+    
+    gap: 15px;
+    padding: 10px 0;
+    
+    /* 2. ADICIONE: Define uma largura máxima para não esticar demais */
+    max-width: 500px; /* Ajuste este valor se precisar de mais ou menos espaço */
+    
+    /* 3. ADICIONE: Centraliza o bloco na horizontal */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* 4. (Opcional) Ajusta como as colunas são alinhadas na grade */
+    justify-content: center; /* Garante a centralização dos itens dentro do grid (útil em telas maiores) */
+}
+
+/* Card Individual de Jogo */
+.card-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-jogo:hover {
+    transform: translateY(-5px);
+}
+
+.miniatura {
+    width: 100%;
+    max-width: 100px; /* Tamanho da miniatura */
+    height: 100px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+    border: 3px solid var(--roxo-claro); /* Borda do cartão */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Sombra neon sutil */
+}
+
+.miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+}
+
+.nome-jogo {
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+/* ------------------ Navegação de Catálogo (Setas) ------------------ */
+.navegacao-catalogo {
+    /* Posicionamento absoluto das setas laterais, como no Canva */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    pointer-events: none; /* Permite clicar nos cards que estão por baixo */
+}
+
+.seta-anterior, .seta-proxima {
+    pointer-events: auto; /* Reativa o clique nas setas */
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    background-color: var(--roxo-neon);
+    color: var(--roxo-escuro);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--roxo-neon);
+    z-index: 20;
+    transition: all 0.25s ease;
+}
+
+.seta-anterior:hover,
+.seta-proxima:hover {
+    transform: translateY(-50%) scale(1.2);
+    box-shadow: 0 0 20px var(--roxo-neon), 0 0 40px var(--roxo-neon);
+}
+
+.seta-anterior {
+    left: 5px;
+}
+
+.seta-proxima {
+    right: 5px;
+}
+
+/* ------------------ Botão Voltar ao Início ------------------ */
+.btn-voltar-inicio {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 0px auto;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--roxo-neon);
+    color: var(--roxo-neon);
+    transition: background-color 0.3s;
+}
+
+.btn-voltar-inicio:hover {
+    background-color: var(--roxo-neon);
+    color: var(--roxo-escuro);
+}
+
+@media (max-width: 900px) {
+    .lista-jogos {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        max-width: 400px;
+    }
+
+    .miniatura {
+        max-width: 120px;
+        height: 120px;
+    }
+
+    .titulo-secao {
+        font-size: 1.5em;
+    }
+}
+
+/* Celulares (até 600px) */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    .minigames {
+        padding: 15px;
+    }
+
+    .lista-jogos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .miniatura {
+        max-width: 90px;
+        height: 90px;
+        border-width: 2px;
+    }
+
+    .nome-jogo {
+        font-size: 0.8em;
+    }
+
+    .titulo-secao {
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+
+    .seta-anterior,
+    .seta-proxima {
+        width: 25px;
+        height: 25px;
+        font-size: 1em;
+    }
+
+    .btn-voltar-inicio {
+        width: 90%;
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+    .lista-jogos {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .miniatura {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .nome-jogo {
+        font-size: 0.75em;
+    }
+
+    .titulo-secao {
+        font-size: 1.1em;
+    }
+}

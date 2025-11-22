@@ -1,0 +1,139 @@
+
+
+
+/* Paleta de Cores (Sugestão para o efeito) */
+:root {
+    --roxo-fundo: #1b003a;
+    --roxo-claro: #5a009c;
+    --roxo-neon: #ff00ff; /* Cor magenta/pink neon */
+    --roxo-escuro: #0f0023;
+    --branco: #ffffff;
+    --cinza-claro: #eeeeee;
+}
+
+/* ------------------ Estilos Globais ------------------ */
+body {
+    font-family: sans-serif;
+    background: linear-gradient(180deg, var(--roxo-fundo) 0%, var(--roxo-escuro) 100%);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Remove a sublinhado de todos os links por padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ------------------ CABEÇALHO (Topo) ------------------ */
+.cabecalho {
+    padding: 30px 20px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Para garantir que o neon fique dentro */
+
+}
+
+.cabecalho h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px var(--roxo-neon);
+}
+
+/* Link Perfil Alfa Devs */
+.perfil-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.perfil-link i {
+    font-size: 1.5em;
+    color: var(--roxo-neon);
+}
+
+/* Logo */
+.logo-container img {
+    width: 200px; /* Ajuste o tamanho conforme o seu logo */
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 3px solid var(--roxo-neon);
+    box-shadow: 0 0 15px var(--roxo-neon);
+}
+
+.imagem-isolada-logo {
+    cursor: pointer;
+}
+
+/* Botão Principal */
+.btn-principal {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--roxo-neon);
+    color: var(--roxo-escuro);
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 0 15px var(--roxo-neon);
+    transition: transform 0.2s;
+}
+
+.btn-principal:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------ Elementos de Design (Estrela/Neon) ------------------ */
+.elemento-estrela {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-1%);
+    width: 200px; /* Ajuste o tamanho da sua imagem de estrela */
+    z-index: 10;
+}
+
+.elemento-controle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-1%);
+    transform: translateX(20%);
+    width: 300px; /* Ajuste o tamanho da sua imagem de estrela */
+    z-index: 10;
+}
+
+.elemento-neon {
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    /* Imita a imagem de controle do Canva */
+    background: radial-gradient(circle, var(--roxo-neon) 0%, transparent 70%);
+    opacity: 0.4;
+    border-radius: 50%;
+    filter: blur(20px);
+}
+
+@media (max-width: 728px) {
+    .elemento-controle {
+        transform: translateX(50%);
+    }
+    
+    .elemento-estrela {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 350px) {
+    .elemento-contrle {
+        transform: translateX(60%);
+    }
+    
+}

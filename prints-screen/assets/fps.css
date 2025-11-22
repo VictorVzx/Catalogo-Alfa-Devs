@@ -100,9 +100,9 @@ body {
 
 #playbutton:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 7px rgb(45, 240, 191);
-    background: linear-gradient(90deg, rgb(0, 166, 150), rgb(32, 127, 165));
-    color: rgb(6, 37, 29);
+    box-shadow: 0 0 7px rgb(38, 0, 55);
+    background: linear-gradient(90deg, rgb(113, 4, 163), rgb(0, 12, 16));
+    color: rgb(255, 255, 255);
 }
 
 #playbutton2 {

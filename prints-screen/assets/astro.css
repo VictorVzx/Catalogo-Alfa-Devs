@@ -94,7 +94,7 @@ body {
     background: linear-gradient(90deg, black, gray);
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 
@@ -113,7 +113,7 @@ body {
     background: linear-gradient(90deg, gray, rgb(168, 168, 168));
     color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 

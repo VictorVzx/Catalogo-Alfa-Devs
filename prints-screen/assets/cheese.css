@@ -19,8 +19,8 @@ html {
 }
 
 body {
-    background-color: var(--primaria);
-    color: var(--claro);
+    background-color: green;
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ body {
 
 .cabecalho-titulo {
     font-size: 3rem;
-    color: var(--claro);
+    color: white;
 }
 
 .cabecalho-paragrafo {
@@ -71,7 +71,7 @@ body {
     width: 250px;
     height: auto;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 15px var(--escuro);
+    box-shadow: 0 0 15px black;
     object-fit: cover;
 }
 
@@ -91,17 +91,17 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
-    color: var(--claro);
+    background-color: darkgreen;
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 
 #playbutton:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 7px rgb(45, 240, 191);
-    background: linear-gradient(90deg, rgb(0, 166, 150), rgb(32, 127, 165));
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(163, 26, 205), rgb(248, 253, 255));
     color: rgb(6, 37, 29);
 }
 
@@ -110,10 +110,10 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
-    color: var(--claro);
+    background-color: darkgreen;
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 

@@ -19,8 +19,8 @@ html {
 }
 
 body {
-    background-color: var(--primaria);
-    color: var(--claro);
+    background-color: rgb(59, 21, 129);
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ body {
 
 .cabecalho-titulo {
     font-size: 3rem;
-    color: var(--claro);
+    color: white;
 }
 
 .cabecalho-paragrafo {
@@ -71,7 +71,7 @@ body {
     width: 250px;
     height: auto;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 15px var(--escuro);
+    box-shadow: 0 0 8px rgb(0, 0, 0);
     object-fit: cover;
 }
 
@@ -91,8 +91,8 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
-    color: var(--claro);
+    background: linear-gradient(90deg, black, gray);
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 7px var(--escuro);
     font-weight: bold;
@@ -100,9 +100,9 @@ body {
 
 #playbutton:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 7px rgb(38, 0, 55);
-    background: linear-gradient(90deg, rgb(113, 4, 163), rgb(0, 12, 16));
-    color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px rgb(99, 97, 0);
+    background: linear-gradient(90deg, rgb(245, 141, 6), rgb(247, 255, 4));
+    color: rgb(6, 37, 29);
 }
 
 #playbutton2 {
@@ -110,8 +110,8 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
-    color: var(--claro);
+    background: linear-gradient(90deg, gray, rgb(168, 168, 168));
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 7px var(--escuro);
     font-weight: bold;

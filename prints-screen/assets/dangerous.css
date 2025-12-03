@@ -19,8 +19,8 @@ html {
 }
 
 body {
-    background-color: var(--primaria);
-    color: var(--claro);
+    background-color: rgb(1, 86, 107);
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -32,7 +32,7 @@ body {
 
 .cabecalho-titulo {
     font-size: 3rem;
-    color: var(--claro);
+    color: white;
 }
 
 .cabecalho-paragrafo {
@@ -91,10 +91,10 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
+    background: linear-gradient(90deg, black, black);
     color: var(--claro);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 
@@ -110,10 +110,10 @@ body {
     width: 120px;
     height: 40px;
     border-radius: 15px;
-    background: linear-gradient(90deg, var(--escuro), var(--escuro));
+    background: linear-gradient(90deg, black, black);
     color: var(--claro);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 7px var(--escuro);
+    box-shadow: 0 0 7px black;
     font-weight: bold;
 }
 

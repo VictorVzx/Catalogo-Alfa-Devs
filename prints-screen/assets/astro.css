@@ -71,7 +71,7 @@ body {
     width: 250px;
     height: auto;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 8px gray;
     object-fit: cover;
 }
 

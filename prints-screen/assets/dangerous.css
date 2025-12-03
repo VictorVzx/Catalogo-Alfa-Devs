@@ -71,7 +71,7 @@ body {
     width: 250px;
     height: auto;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 15px var(--escuro);
+    box-shadow: 0 0 15px black;
     object-fit: cover;
 }
 
@@ -92,7 +92,7 @@ body {
     height: 40px;
     border-radius: 15px;
     background: linear-gradient(90deg, black, black);
-    color: var(--claro);
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 7px black;
     font-weight: bold;
@@ -111,7 +111,7 @@ body {
     height: 40px;
     border-radius: 15px;
     background: linear-gradient(90deg, black, black);
-    color: var(--claro);
+    color: white;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 0 7px black;
     font-weight: bold;

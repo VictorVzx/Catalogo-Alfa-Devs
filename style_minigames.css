@@ -40,7 +40,7 @@ main {
 
 .minigames {
     background-color: var(--roxo-escuro);
-    padding: 20px;
+    padding: 20px 50px;
     border-radius: 15px;
     position: relative;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -190,7 +190,7 @@ main {
     }
 
     .minigames {
-        padding: 15px;
+        padding: 15px 40px;
     }
 
     .lista-jogos {

@@ -11,10 +11,10 @@ html {
 }
 
 :root {
-    --primaria: #530155;
-    --secundaria: #C04EC4;
-    --escuro: #420144;
-    --claro: #fdceff;
+    --primaria: #0d6cb0;
+    --secundaria: #1734d4;
+    --escuro: #030158;
+    --claro: #ffffff;
     --vidro: rgba(255, 255, 255, 0.2);
 }
 
@@ -100,8 +100,8 @@ body {
 
 #playbutton:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 7px rgb(45, 240, 191);
-    background: linear-gradient(90deg, rgb(0, 166, 150), rgb(32, 127, 165));
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+    background: rgb(128, 1, 1);
     color: rgb(6, 37, 29);
 }
 

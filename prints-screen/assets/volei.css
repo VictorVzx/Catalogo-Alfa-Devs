@@ -11,10 +11,10 @@ html {
 }
 
 :root {
-    --primaria: #530155;
-    --secundaria: #C04EC4;
-    --escuro: #420144;
-    --claro: #fdceff;
+    --primaria: #026d9b;
+    --secundaria: #00456c;
+    --escuro: #00365d;
+    --claro: #ffffff;
     --vidro: rgba(255, 255, 255, 0.2);
 }
 

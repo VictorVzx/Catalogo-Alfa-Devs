@@ -11,6 +11,10 @@
     --cinza-claro: #eeeeee;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* ------------------ Estilos Globais ------------------ */
 body {
     font-family: sans-serif;

@@ -43,6 +43,15 @@ a {
     text-shadow: 0 0 10px var(--roxo-neon);
 }
 
+.cabecalho button {
+    cursor: pointer;
+    width: 20%;
+}
+
+.cabecalho button:hover {
+    opacity: 0.9;
+}
+
 /* Link Perfil Alfa Devs */
 .perfil-link {
     display: flex;

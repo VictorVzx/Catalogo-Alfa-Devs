@@ -56,6 +56,32 @@ a {
     opacity: 0.9;
 }
 
+.patrocinio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    gap: 0.5rem;
+    margin-top: 110px;
+    
+}
+
+.patrocinio img {
+    width: 100px;
+    margin-top: 7px;
+    transition: 0.2s ease;
+}
+
+.patrocinio img:hover {
+    transform: scale(1.1);
+}
+
+.patrocinio img:active {
+    transform: scale(1.0);
+}
+
+
+
 /* Link Perfil Alfa Devs */
 .perfil-link {
     display: flex;
